@@ -1,0 +1,159 @@
+# 🤝 Contributing to VisionLex
+
+Welcome to **VisionLex — the Text + Image Multimodal Learning Framework**!  
+We’re thrilled that you want to contribute. 💫  
+
+VisionLex is an open-source project for aligning **text and image embeddings** in a shared space for tasks like image captioning, text-to-image retrieval, and visual question answering (VQA).  
+Whether you’re improving documentation, adding modules, implementing experiments, or fixing bugs, your contribution makes VisionLex stronger.
+
+---
+
+## 🧭 Table of Contents
+1. [Getting Started](#getting-started)
+2. [Ways to Contribute](#ways-to-contribute)
+3. [Coding Standards](#coding-standards)
+4. [Pull Request Process](#pull-request-process)
+5. [Community & Code of Conduct](#community--code-of-conduct)
+6. [Hacktoberfest Participation](#hacktoberfest-participation)
+7. [License](#license)
+8. [Resources](#resources)
+9. [Acknowledgment](#acknowledgment)
+
+---
+
+## 🧠 Getting Started
+
+1. **Fork the Repository**
+   - Click **Fork** at the top right of the [VisionLex repo](https://github.com/Zangetsu-Tensa/VisionLex-A-Multimodal-Text-Image-Understanding-Framework.git).
+
+2. **Clone Your Fork**
+```bash
+git clone https://github.com/<your-name>/VisionLex-A-Multimodal-Text-Image-Understanding-Framework.git
+cd VisionLex
+Create a Branch
+
+bash
+Copy code
+git checkout -b feature/your-feature-name
+Install Dependencies
+
+bash
+Copy code
+pip install -r requirements.txt
+Make and Test Your Changes
+
+Run examples locally
+
+Ensure no breaking errors
+
+Write clear commits
+
+🧩 Ways to Contribute
+We welcome contributions of all levels:
+
+Type	Examples
+🧱 Core Code	Implement new text/image encoders or cross-modal modules
+🧪 Experiments	Add new datasets, training pipelines, evaluation scripts
+📝 Documentation	Improve README, write tutorials, or fix typos
+🧰 Utilities	Add preprocessing, visualization, or logging tools
+💡 Ideas	Suggest new loss functions, architectures, or alignment techniques
+
+Guidelines:
+
+Keep PRs focused and modular
+
+Use meaningful commit messages
+
+Add docstrings for classes/functions
+
+Test all new modules
+
+🧮 Coding Standards
+Language: Python (≥3.8)
+Framework: PyTorch
+
+Style:
+
+Follow PEP8
+
+Format code with black or autopep8
+
+Naming:
+
+Classes → CamelCase
+
+Functions → snake_case
+
+Constants → UPPER_CASE
+
+Files → lowercase_with_underscores.py
+
+Example:
+
+python
+Copy code
+class CrossModalAttention(nn.Module):
+    """Aligns text and image features using attention."""
+    def forward(self, text_feat, image_feat):
+        ...
+Documentation:
+
+Each function should have a docstring describing arguments, returns, and purpose.
+
+🔄 Pull Request Process
+Ensure your branch is up-to-date with main:
+
+bash
+Copy code
+git pull origin main
+Stage and commit your changes:
+
+bash
+Copy code
+git add .
+git commit -m "Add cross-modal transformer module"
+Push to your fork:
+
+bash
+Copy code
+git push origin feature/your-feature-name
+Open a Pull Request:
+
+Explain what and why you changed
+
+Add labels like enhancement, bugfix, documentation
+
+Wait for review ✅
+Maintainers will review, suggest edits if needed, and merge once approved.
+
+🧭 Community & Code of Conduct
+Please maintain a collaborative, respectful, and inclusive environment.
+
+Do:
+
+Be polite and constructive
+
+Help others understand the code
+
+Ask before large architectural changes
+
+Don’t:
+
+Submit spammy or low-quality PRs
+
+Copy code without credit
+
+Push unrelated files
+
+By participating, you agree to follow the Contributor Covenant Code of Conduct.
+
+🎃 Hacktoberfest Participation
+VisionLex is Hacktoberfest-friendly 🌱
+
+Repo must be public ✅
+
+Add topic: hacktoberfest ✅
+
+Label valid PRs: hacktoberfest-accepted ✅
+
+Submit meaningful PRs during October 2025 to earn points.
